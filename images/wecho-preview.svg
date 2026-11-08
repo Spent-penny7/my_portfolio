@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wechoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#31104b" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="bubbleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#wechoBg)" />
+
+  <!-- App Header / Top bar -->
+  <rect x="30" y="25" width="540" height="45" rx="8" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.1)" />
+  <circle cx="55" cy="47" r="6" fill="#ef4444" />
+  <circle cx="75" cy="47" r="6" fill="#f59e0b" />
+  <circle cx="95" cy="47" r="6" fill="#10b981" />
+  <text x="300" y="52" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#a5b4fc" text-anchor="middle">💬 Wecho • Real-Time Chat &amp; Community</text>
+
+  <!-- Sidebar area -->
+  <rect x="30" y="80" width="160" height="255" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" />
+  <!-- User 1 -->
+  <circle cx="60" cy="115" r="16" fill="#6366f1" />
+  <rect x="85" y="108" width="85" height="10" rx="5" fill="#e2e8f0" />
+  <rect x="85" y="124" width="55" height="7" rx="3" fill="#64748b" />
+  <!-- User 2 active -->
+  <rect x="40" y="145" width="140" height="45" rx="6" fill="rgba(99,102,241,0.2)" stroke="#6366f1" stroke-width="1.5" />
+  <circle cx="62" cy="167" r="16" fill="#ec4899" />
+  <rect x="87" y="160" width="75" height="10" rx="5" fill="#ffffff" />
+  <rect x="87" y="176" width="60" height="7" rx="3" fill="#a5b4fc" />
+  <!-- User 3 -->
+  <circle cx="60" cy="220" r="16" fill="#14b8a6" />
+  <rect x="85" y="213" width="70" height="10" rx="5" fill="#e2e8f0" />
+  <rect x="85" y="229" width="50" height="7" rx="3" fill="#64748b" />
+
+  <!-- Chat Content Area -->
+  <rect x="200" y="80" width="370" height="255" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" />
+
+  <!-- Received Message -->
+  <g transform="translate(220, 105)">
+    <circle cx="16" cy="18" r="14" fill="#ec4899" />
+    <path d="M40 0 H 260 A 14 14 0 0 1 274 14 V 32 A 14 14 0 0 1 260 46 H 54 A 14 14 0 0 1 40 32 Z" fill="url(#bubbleGrad2)" stroke="rgba(255,255,255,0.1)" />
+    <text x="56" y="27" font-family="'Segoe UI', sans-serif" font-size="12" fill="#e2e8f0">Hey Mitchell! Did you push the latest sync?</text>
+  </g>
+
+  <!-- Sent Message -->
+  <g transform="translate(255, 175)">
+    <path d="M0 0 H 280 A 14 14 0 0 1 294 14 V 32 A 14 14 0 0 1 280 46 H 14 A 14 14 0 0 1 0 32 Z" fill="url(#bubbleGrad1)" />
+    <text x="16" y="27" font-family="'Segoe UI', sans-serif" font-size="12" fill="#ffffff">Yes! Firestore batch updates &amp; storage are live 🔥</text>
+  </g>
+
+  <!-- Input Field Mock -->
+  <rect x="220" y="280" width="330" height="38" rx="19" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" />
+  <text x="245" y="304" font-family="'Segoe UI', sans-serif" font-size="12" fill="#94a3b8">Type a message...</text>
+  <circle cx="525" cy="299" r="13" fill="#6366f1" />
+  <polygon points="522,293 530,299 522,305" fill="#ffffff" />
+</svg>

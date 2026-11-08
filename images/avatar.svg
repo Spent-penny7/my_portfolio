@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="50%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#45b7d1"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8d5524"/>
+      <stop offset="100%" stop-color="#643b18"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Aura -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" opacity="0.15" />
+  <circle cx="200" cy="200" r="170" fill="url(#bgGrad)" opacity="0.3" filter="url(#shadow)" />
+
+  <!-- Code elements background -->
+  <text x="60" y="110" font-family="monospace" font-size="20" fill="#4ecdc4" opacity="0.7">&lt;code&gt;</text>
+  <text x="290" y="140" font-family="monospace" font-size="18" fill="#ff6b6b" opacity="0.7">&#123; mi &#125;</text>
+  <text x="70" y="310" font-family="monospace" font-size="18" fill="#ffe66d" opacity="0.7">const dev = true;</text>
+  <text x="280" y="290" font-family="monospace" font-size="18" fill="#45b7d1" opacity="0.7">&lt;/code&gt;</text>
+
+  <!-- Developer Avatar Body -->
+  <!-- Shoulders & Hoodie -->
+  <path d="M100 370 C 110 280, 150 255, 200 255 C 250 255, 290 280, 300 370 Z" fill="url(#shirtGrad)" />
+  <path d="M165 258 L 200 300 L 235 258 Z" fill="#334155" />
+  <circle cx="200" cy="235" r="16" fill="url(#skinGrad)" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="60" ry="70" fill="url(#skinGrad)" />
+  
+  <!-- Hair -->
+  <path d="M140 170 C 138 120, 160 105, 200 105 C 240 105, 262 120, 260 170 C 250 145, 230 135, 200 135 C 170 135, 150 145, 140 170 Z" fill="#111827" />
+
+  <!-- Eyes -->
+  <ellipse cx="178" cy="175" rx="6" ry="7" fill="#ffffff" />
+  <circle cx="178" cy="175" r="3.5" fill="#111827" />
+  <ellipse cx="222" cy="175" rx="6" ry="7" fill="#ffffff" />
+  <circle cx="222" cy="175" r="3.5" fill="#111827" />
+
+  <!-- Eyebrows -->
+  <path d="M168 162 Q 178 158 188 163" stroke="#111827" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M212 163 Q 222 158 232 162" stroke="#111827" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Glasses -->
+  <rect x="160" y="163" width="34" height="24" rx="6" fill="none" stroke="#4ecdc4" stroke-width="3.5" />
+  <rect x="206" y="163" width="34" height="24" rx="6" fill="none" stroke="#4ecdc4" stroke-width="3.5" />
+  <line x1="194" y1="175" x2="206" y2="175" stroke="#4ecdc4" stroke-width="3.5" />
+
+  <!-- Smile -->
+  <path d="M185 210 Q 200 224 215 210" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Modern Headphones -->
+  <path d="M136 180 C 130 110, 270 110, 264 180" fill="none" stroke="#ff6b6b" stroke-width="7" stroke-linecap="round" />
+  <rect x="127" y="165" width="16" height="34" rx="8" fill="#ff6b6b" />
+  <rect x="257" y="165" width="16" height="34" rx="8" fill="#ff6b6b" />
+
+  <!-- Badge / Monogram -->
+  <g transform="translate(160, 315)">
+    <rect width="80" height="28" rx="14" fill="#ff6b6b" opacity="0.9"/>
+    <text x="40" y="19" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Code_Mi</text>
+  </g>
+</svg>
